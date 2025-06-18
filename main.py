@@ -41,7 +41,7 @@ class QueryResponse(BaseModel):
 async def process_query(request: QueryRequest):
     try:
         # Debug: Print environment and request
-        print("Pinecone API key:", os.getenv('PINECONE_API_KEY'))
+        #print("Pinecone API key:", os.getenv('PINECONE_API_KEY'))
         print("Assistant name:", assistant.assistant_name)
         print("Received question:", request.question)
         if request.image:
